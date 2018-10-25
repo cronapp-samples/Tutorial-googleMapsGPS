@@ -1,0 +1,23 @@
+{
+  "name": "cronapp-google-maps",
+  "version": "0.0.8",
+  "homepage": "https://github.com/CronApp/cronapp-google-maps",
+  "authors": [
+    "Rodrigo Santos Reis"
+  ],
+  "description": "Google maps API",
+  "main": "google-maps-cronapi.js",
+  "keywords": [
+    "google",
+    "maps",
+    "cronapi"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

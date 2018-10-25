@@ -1,0 +1,1 @@
+window.blockly = window.blockly || {};window.blockly.js = window.blockly.js || {};window.blockly.js.blockly = window.blockly.js.blockly || {};document.write("<script src='js/blockly/BlocoMobile.blockly.js?1540491531000'></script>");

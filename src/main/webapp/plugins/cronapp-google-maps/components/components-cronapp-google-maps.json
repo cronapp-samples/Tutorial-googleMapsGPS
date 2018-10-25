@@ -1,0 +1,27 @@
+{
+	"name": "cronos-components",
+	"version": "1.0.0",
+	"components": [
+		{
+			"name": "crn-google-maps",
+			"text_pt_BR": "Google Maps",
+			"text_en_US": "Google Maps",
+			"class": "adjust-icon mdi mdi-google-maps",
+			"template": "<div id=\"map${RANDOM}\" token=\"INSERT TOKEN HERE\" >",
+			"designTimeHTML":"<img style=\"height: 100%;width:100%;min-height:100%; min-width:100%;\"  src=\"plugins/cronapp-google-maps/img/google-maps.svg\"/>",
+      		"designTimeSelector": "div",
+			"properties": {
+				"token": {
+					"removable": false
+				}
+			},
+			"childrenProperties":[
+				{
+				"name":"token",
+				"selector":"div",
+				"type":"text"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,48 @@
+<ion-side-menus enable-menu-with-back-views="false"> 
+  <div class="row" data-container="true"> 
+    <ion-side-menu-content> 
+      <ion-nav-bar class="bar-stable"> 
+        <ion-nav-back-button> 
+        </ion-nav-back-button> 
+        <ion-nav-buttons side="left"> 
+          <button class="button button-icon button-clear ion-navicon" menu-toggle="left"> </button> 
+        </ion-nav-buttons> 
+      </ion-nav-bar> 
+      <ion-nav-view name="menuContent"> 
+      </ion-nav-view> 
+    </ion-side-menu-content> 
+    <ion-side-menu side="left"> 
+      <ion-header-bar class="bar-stable"> 
+        <h1 class="title">Menu</h1> 
+      </ion-header-bar> 
+      <ion-content data-container="true"> 
+        <ion-list> 
+          <!-- Menu --> 
+          <div class="component-holder" data-component="crn-navbar" id="crn-navbar-986427"> 
+            <div class="nav navbar-nav"> 
+              <div class="item item-divider"> 
+                <i class="icon ion-ios-person"></i> &nbsp; {{session.user.name}} 
+              </div> 
+              <div menu-close="" class="item-icon-left item item-complex" data-component="crn-anchor"> 
+                <a class="component-holder item-content ng-binding" href="#/app/home"> <i class="icon ion-home"></i><label>{{"Home.view.Home" | translate}}</label></a> 
+              </div> 
+              <div class="item item-divider"></div> 
+              <div menu-close="" class="item-icon-left item item-complex" data-component="crn-anchor"> 
+                <a class="item-content ng-binding" href="#/app/logged/user"> <i class="icon ion-ios-person"></i> <label>{{ "Users.view.Users" | translate }}</label></a> 
+              </div> 
+              <div class="item item-divider"></div> 
+              <div menu-close="" class="item-icon-left item item-complex" data-component="crn-anchor"> 
+                <a class="component-holder item-content ng-binding" href="#/app/home" ng-click="openChangePassword()" > <i class="icon ion-lock-combination"></i><label>{{"Home.view.ChangePassword" | translate}}</label></a> 
+              </div> 
+              <div menu-close="" class="item-icon-left item item-complex" data-component="crn-anchor"> 
+                <a class="component-holder item-content ng-binding" ng-click="logout()" href="#" > <i class="icon icon ion-arrow-left-a"></i><label>{{"Home.view.Sair" | translate}}</label></a> 
+              </div> 
+               
+            </div> 
+          </div> 
+          <!-- Menu --> 
+        </ion-list> 
+      </ion-content> 
+    </ion-side-menu> 
+  </div> 
+</ion-side-menus>
